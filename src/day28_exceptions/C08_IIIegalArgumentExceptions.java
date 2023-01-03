@@ -16,7 +16,7 @@ public class C08_IIIegalArgumentExceptions {
         if (yas<0){
          throw new IllegalAccessException();
         }else {
-            System.out.println("yasiniz kaydedildi");
+            System.out.println("yasiniz kaydedildi.");
         }
     }
 }
