@@ -9,5 +9,5 @@ public class CCar {
 
     String marka="Marka atanmadi";
     String model="Model atanmadi";
-    String motor="her arabanin motoru olur";
+    String motor="her arabanin motoru olur.";
 }

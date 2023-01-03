@@ -8,7 +8,7 @@ public class ECorolla extends DToyota {
 
     ECorolla(String param1){
         super("Gri");
-        System.out.println("String parametreli cons calisti");
+        System.out.println("String parametreli cons calisti.");
     }
     String model="Corolla";
     String uretimYeri="Turkiye";
