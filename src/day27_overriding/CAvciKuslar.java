@@ -1,7 +1,6 @@
 package day27_overriding;
 
-public class CAvciKuslar extends BKuslar
-{
+public class CAvciKuslar extends BKuslar {
 
     protected void hareket( ){
         System.out.println("ucarlar");
@@ -20,23 +19,50 @@ public class CAvciKuslar extends BKuslar
 
         CAvciKuslar krt1=new CAvciKuslar();
 
-        krt1.hareket();//c ucar
-        krt1.beslenme();//c et yer
-        krt1.pence();// c pence
-        krt1.gaga();//c sivri gga
-        krt1.kanat();//b kanatli
-        krt1.solunum();//b akciger ile nefes
-        krt1.cogalma();//b yumurta ile cogalir
+        krt1.hareket(); // c  ucarlar
+        krt1.beslenme(); // c  et yerler
+        krt1.pence(); // c pencelidir
+        krt1.gaga(); // c sivri gagali
+        krt1.kanat(); // b kanatlidirlar
+        krt1.solunum(); // b akcigerle nefes alirlar
+        krt1.cogalma(); // b yumurtayla cogalirlar
+        krt1.omur(); // a yasar ve olurler
+        // Eger constructor ile data turu ayni ise
+        // ozelligin variable veya method olmasina bakilmaksizin
+        // o class'a gidilir, o class veya parent class'larda
+        // bulunan ILK DEGER kullanilir
 
-        BKuslar krt2=new CAvciKuslar();
+        BKuslar krt2= new CAvciKuslar();
 
-        krt2.hareket();//c ucar
-        krt2.beslenme();//c et yer
-        krt2.pence();// c pence
-        krt2.gaga();//c sivri gga
-        krt2.kanat();//b kanatli
-        krt2.solunum();//b akciger ile nefes
-        krt2.cogalma();//b yumurta ile cogalir
+        krt2.hareket(); // c  ucarlar
+        krt2.beslenme(); // c  et yerler
+        // krt2.pence(); // BKuslar veya parent class'da yok, CTE verir
+        krt2.gaga(); // c sivri gagali
+        krt2.kanat(); // b kanatlidirlar
+        krt2.solunum(); // b akcigerle nefes alirlar
+        krt2.cogalma(); // b yumurtayla cogalirlar
+        krt2.omur(); // a yasar ve olurler
+
+
+        AHayvanlar krt3= new CAvciKuslar();
+
+        krt3.hareket(); // c  ucarlar
+        krt3.beslenme(); // c  et yerler
+        //krt3.pence(); // AHayvanlar'da yok, CTE
+        //krt3.gaga(); // AHayvanlar'da yok, CTE
+        //krt3.kanat(); // AHayvanlar'da yok, CTE
+        krt3.solunum(); // b akcigerle nefes alirlar
+        krt3.cogalma(); // b yumurtayla cogalirlar
+        krt3.omur(); // a yasar ve olurler
+
+
+
+
+
+
+
+
+
 
 
     }
